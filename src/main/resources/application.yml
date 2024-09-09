@@ -1,1 +1,3 @@
-spring.application.name=spring-data-jpa-service
+spring：
+  application：
+    name： spring-data-jpa-service

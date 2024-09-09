@@ -10,11 +10,10 @@ import java.util.UUID;
 
 @Data
 @Entity
-public class Person {
+public class Customer {
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
     private UUID id;
-
-    private String firstName;
-    private String lastName;
+    private String code;
+    private String name;
 }
