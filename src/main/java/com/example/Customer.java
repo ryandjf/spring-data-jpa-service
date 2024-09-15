@@ -12,6 +12,8 @@ import java.util.UUID;
 @Entity
 public class Customer {
     @Id
+//    @Column(columnDefinition = "VARCHAR(36)")
+//    @JdbcTypeCode(SqlTypes.VARCHAR)
     @GeneratedValue(strategy = GenerationType.UUID)
     private UUID id;
     private String code;

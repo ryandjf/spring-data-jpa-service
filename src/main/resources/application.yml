@@ -1,3 +1,14 @@
-spring：
-  application：
-    name： spring-data-jpa-service
+spring:
+  application:
+    name: spring-data-jpa-service
+  h2:
+    console:
+      enabled: true
+  jpa:
+    properties:
+      hibernate:
+        generate_statistics: true
+#      type:
+#        preferred_uuid_jdbc_type: CHAR
+    hibernate:
+      ddl-auto: none
