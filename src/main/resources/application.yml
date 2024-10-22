@@ -5,10 +5,24 @@ spring:
     console:
       enabled: true
   jpa:
+    show-sql: true
     properties:
       hibernate:
-        generate_statistics: true
+        format_sql: true
+#        generate_statistics: true
 #      type:
 #        preferred_uuid_jdbc_type: CHAR
+
+    # This will ensure that only script-based schema generation is performed using schema.sql.
     hibernate:
       ddl-auto: none
+
+# If we still want to have both Hibernate automatic schema generation in conjugation with script-based schema creation and data population, we’ll have to use:
+# This will ensure that after Hibernate schema creation is performed, then additionally schema.sql is
+# read for any additional schema changes, and further data.sql is executed to populate the database.
+#    defer-datasource-initialization: true
+  sql:
+    init:
+      platform: h2
+      schema-locations: classpath:/schema.sql
+      data-locations: classpath:/data.sql
