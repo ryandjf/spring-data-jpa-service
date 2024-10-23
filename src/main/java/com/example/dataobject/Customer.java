@@ -1,4 +1,4 @@
-package com.example;
+package com.example.dataobject;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -10,11 +10,12 @@ import java.util.UUID;
 
 @Data
 @Entity
-public class Person {
+public class Customer {
     @Id
+//    @Column(columnDefinition = "VARCHAR(36)")
+//    @JdbcTypeCode(SqlTypes.VARCHAR)
     @GeneratedValue(strategy = GenerationType.UUID)
     private UUID id;
-
-    private String firstName;
-    private String lastName;
+    private String code;
+    private String name;
 }

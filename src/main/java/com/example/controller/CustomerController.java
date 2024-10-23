@@ -1,5 +1,6 @@
-package com.example;
+package com.example.controller;
 
+import com.example.repository.CustomerRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.http.ResponseEntity;

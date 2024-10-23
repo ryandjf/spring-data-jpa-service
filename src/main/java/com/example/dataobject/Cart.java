@@ -1,4 +1,4 @@
-package com.example;
+package com.example.dataobject;
 
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.Column;

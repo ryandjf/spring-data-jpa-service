@@ -1,5 +1,6 @@
-package com.example;
+package com.example.repository;
 
+import com.example.dataobject.Person;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.data.repository.PagingAndSortingRepository;
 import org.springframework.data.repository.query.Param;

@@ -1,5 +1,6 @@
-package com.example;
+package com.example.repository;
 
+import com.example.dataobject.Customer;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.data.repository.PagingAndSortingRepository;

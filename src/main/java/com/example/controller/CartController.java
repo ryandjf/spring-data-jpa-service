@@ -1,19 +1,18 @@
-package com.example;
+package com.example.controller;
 
+import com.example.repository.CartRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.PageRequest;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/users")
-public class UserController {
+@RequestMapping("/carts")
+public class CartController {
 
     @Autowired
-    private UserRepository repository;
+    private CartRepository repository;
 
     @GetMapping
     public ResponseEntity<?> getAll() {
